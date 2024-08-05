@@ -55,19 +55,68 @@ hr {
   gap: 20px;
 }
 
-.password {
-  background: #273549;
+#passOne {
+  position: relative;
+  background-color: #273549;
   padding-top: 8px;
   padding-bottom: 8px;
   width: 160px;
   height: 18px;
-  text-align: center;
   border-radius: 5px;
+  text-align: center;
   color: #bae6fd;
   cursor: pointer;
 }
 
-.password:hover {
-  background-color: #bae6fd;
-  color: black;
+#passTwo {
+  position: relative;
+  background-color: #273549;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 160px;
+  height: 18px;
+  border-radius: 5px;
+  text-align: center;
+  color: #bae6fd;
+  cursor: pointer;
+}
+
+#pass-text {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  transform: translateX(14%);
+  z-index: 1;
+  white-space: nowrap;
+  padding: 3px 10px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+}
+#pass-text::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 10px solid;
+  border-color: #635e5e #0000 #0000 #0000;
+}
+
+#passOne:hover #pass-text {
+  background-color: #635e5e;
+  color: rgb(255, 255, 255);
+  top: -80%;
+  visibility: visible;
+  opacity: 1;
+}
+
+#passTwo:hover #pass-text {
+  background-color: #635e5e;
+  color: rgb(255, 255, 255);
+  top: -80%;
+  visibility: visible;
+  opacity: 1;
 }

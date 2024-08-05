@@ -9,13 +9,23 @@
   <body>
     <div class="container">
       <div class="box">
-        <h1>Generate a </br><span style="color: chartreuse;"> Random Password</h1>
+        <h1>
+          Generate a <br /><span style="color: chartreuse">
+            Random Password</span
+          >
+        </h1>
         <p>Never use an insecure password again.</p>
         <button onclick="generatedPassword()">Generate Password</button>
-        <hr>
+        <hr />
         <div class="generated-password">
-            <div class="password" id="oneGenerated-el" onclick="copyPasswordOne()"></div>
-            <div class="password" id="secondGenerated-el" onclick="copyPasswordSecond()" ></div>
+          <div id="passOne">
+            <span id="pass-text">Copy Password</span>
+            <span id="oneGenerated-el" onclick="copyPasswordOne()"> </span>
+          </div>
+          <div id="passTwo">
+            <span id="pass-text">Copy Password</span>
+            <div id="secondGenerated-el" onclick="copyPasswordSecond()"></div>
+          </div>
         </div>
       </div>
     </div>
