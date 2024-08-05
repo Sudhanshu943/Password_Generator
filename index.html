@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Generate a </br><span style="color: chartreuse;"> Random Password</h1>
+        <p>Never use an insecure password again.</p>
+        <button onclick="generatedPassword()">Generate Password</button>
+        <hr>
+        <div class="generated-password">
+            <div class="password" id="oneGenerated-el" onclick="copyPasswordOne()"></div>
+            <div class="password" id="secondGenerated-el" onclick="copyPasswordSecond()" ></div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
